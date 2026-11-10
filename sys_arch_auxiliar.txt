@@ -1,0 +1,21 @@
+sys_prot_t sys_arch_protect(void)
+{
+    /* Usa interrupção crítica para evitar suspender o escalonador do FreeRTOS */
+    taskENTER_CRITICAL();
+    return 1;
+}
+/*
+  This optional function does a "fast" set of critical region protection to the
+  value specified by pval. See the documentation for sys_arch_protect() for
+  more information. This function is only required if your port is supporting
+  an operating system.
+
+  Note: This function is based on FreeRTOS API, because no equivalent CMSIS-RTOS
+        API is available
+*/
+void sys_arch_unprotect(sys_prot_t pval)
+{
+    (void) pval;
+    /* Retorna ao estado normal de interrupção */
+    taskEXIT_CRITICAL();
+}

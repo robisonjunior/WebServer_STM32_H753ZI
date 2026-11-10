@@ -1,0 +1,21 @@
+# Arquivos de compilação e saída de binários
+Debug/
+Release/
+*.elf
+*.hex
+*.bin
+*.map
+*.o
+*.d
+*.su
+*.dwo
+
+# Arquivos temporários locais da IDE (Eclipse/STM32CubeIDE)
+.metadata/
+RemoteSystemsTempFiles/
+.settings/
+*.launch
+
+# Backups e logs
+*.bak
+*.log
