@@ -2,6 +2,9 @@
 
 Firmware avançado desenvolvido para a família de microcontroladores **STM32H7** utilizando **FreeRTOS**, a pilha TCP/IP **lwIP** (Netconn API) e o ecossistema STM32Cube. O sistema implementa um **Web Dashboard responsivo** integrado diretamente na MCU para monitoramento de telemetria em tempo real e controle de hardware por hardware (geração de pulsos via Timer).
 
+![image 1](./web1.jpeg)
+![image 2](./web2.jpeg)
+
 ---
 
 ## 📋 Funcionalidades Principais
